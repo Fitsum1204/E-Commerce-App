@@ -1,4 +1,4 @@
-import './categories.styles.scss'
+import './components/routes/catagory/catagory.styles.scss'
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 

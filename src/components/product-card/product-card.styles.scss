@@ -48,4 +48,51 @@
       width: 10%;
     }
   }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    height: 320px;
+
+    img {
+      height: 90%;
+    }
+
+    button {
+      width: 70%;
+      top: 230px;
+    }
+
+    .footer {
+      font-size: 16px;
+
+      .name {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 300px;
+
+    img {
+      height: 85%;
+    }
+
+    button {
+      width: 25%;
+      top: 220px;
+    }
+
+    .footer {
+      font-size: 14px;
+
+      .name {
+        margin-bottom: 5px;
+      }
+
+      .price {
+        width: auto;
+      }
+    }
+  }
 }

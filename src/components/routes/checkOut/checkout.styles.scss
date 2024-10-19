@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
-
+ 
   .checkout-header {
     width: 100%;
     padding: 10px 0;
@@ -27,5 +27,62 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    width: 75%; /* Wider on tablets */
+    
+    .checkout-header {
+      .header-block {
+        width: 22%; /* Slightly reduce block width */
+        
+        &:last-child {
+          width: 10%; /* Adjust width for last block */
+        }
+      }
+    }
+
+    .total {
+      font-size: 32px; /* Slightly reduce total font size */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%; /* Full width for mobile devices */
+    
+    .checkout-header {
+      .header-block {
+        width: 30%; /* Adjust block width to fit smaller screen */
+        
+        &:last-child {
+          width: 12%; /* Adjust width for last block */
+        }
+      }
+    }
+
+    .total {
+      font-size: 28px; /* Further reduce total font size */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%; /* Full width on extra small screens */
+    padding: 0 10px;
+
+    .checkout-header {
+      .header-block {
+        width: 45%; /* Stack items on small screens */
+        
+        &:last-child {
+          width: 20%; /* Adjust last block width */
+        }
+      }
+    }
+
+    .total {
+      font-size: 24px; /* Reduce total size for small devices */
+      margin-top: 20px; /* Adjust margin */
+    }
   }
 }

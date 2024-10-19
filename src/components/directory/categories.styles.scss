@@ -4,5 +4,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    justify-content: space-around; /* Adjust spacing for tablets */
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; /* Stack categories on smaller screens */
+    align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column; /* Ensure stacking on mobile */
+    padding: 0 10px; /* Add padding for mobile devices */
+  }
+}

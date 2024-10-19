@@ -1,12 +1,40 @@
 .sign-in-container {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 380px; /* Default width for larger screens */
+
     h2 {
         margin: 10px 0;
     }
+
     .buttons-container {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 768px) {
+    .sign-in-container {
+        width: 90%; /* Increase width to 90% on smaller screens */
+        max-width: 400px; /* Set a max width to prevent it from becoming too large */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+    .sign-in-container {
+        width: 95%; /* Further increase width to 95% on very small screens */
+    }
+
+    .buttons-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center align the buttons */
+        width: 100%; /* Make the buttons container full width */
+    }
+
+    .buttons-container button {
+        width: 100%; /* Make buttons full width */
+        margin: 5px 0; /* Add some spacing between buttons */
     }
 }

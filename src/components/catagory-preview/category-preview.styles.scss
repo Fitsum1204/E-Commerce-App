@@ -7,11 +7,39 @@
     font-size: 28px;
     margin-bottom: 25px;
     cursor: pointer;
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 
   .preview {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
+
+    /* Responsive Design */
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+      column-gap: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets */
+      column-gap: 10px;
+    }
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      column-gap: 5px;
+      row-gap: 15px; /* Add spacing between items */
+    }
   }
 }

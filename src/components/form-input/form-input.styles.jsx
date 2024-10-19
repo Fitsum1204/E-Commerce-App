@@ -20,6 +20,15 @@ export const FormInputLabel = styled.label`
   transition: 300ms ease all;
 
   ${({ shrink }) => shrink && shrinkLabelStyles};
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 export const Input = styled.input`
@@ -42,6 +51,17 @@ export const Input = styled.input`
   &:focus ~ ${FormInputLabel} {
     ${shrinkLabelStyles};
   }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 8px 8px 4px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    padding: 6px 6px 6px 3px;
+  }
 `;
 
 export const Group = styled.div`
@@ -50,5 +70,23 @@ export const Group = styled.div`
 
   input[type='password'] {
     letter-spacing: 0.3em;
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      letter-spacing: 0.2em;
+    }
+
+    @media screen and (max-width: 480px) {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    margin: 35px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 25px 0;
   }
 `;

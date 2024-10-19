@@ -1,13 +1,21 @@
 .authentication-container {
     display: flex;
-    width:900px;
+    width: 900px;
     justify-content: space-between;
     margin: 30px auto;
-}
-/* @media screen and (min-width: 600px){
-    .authentication-container {
-        display: flex;
-        flex-direction: column;
-        margin: 30px auto;
+    gap: 20px; /* Adds space between the sign-in and sign-up forms */
+  
+    /* Responsive for tablets and smaller devices */
+    @media screen and (max-width: 768px) {
+      flex-direction: column;  /* Stacks sign-in on top of sign-up */
+      width: 100%;  /* Makes the container take full width */
+      align-items: center;  /* Centers the forms horizontally */
     }
-} */
+  
+    /* For mobile devices, you can further adjust spacing */
+    @media screen and (max-width: 480px) {
+      width: 90%;  /* Ensures the container isn't too wide on small screens */
+      margin: 20px auto;  /* Adjusts the margin for smaller screens */
+    }
+  }
+  

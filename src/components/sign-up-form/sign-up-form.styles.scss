@@ -1,8 +1,24 @@
 .sign-up-container {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 380px; /* Default width for larger screens */
+
     h2 {
         margin: 10px 0;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 768px) {
+    .sign-up-container {
+        width: 90%; /* Increase width to 90% on smaller screens */
+        max-width: 400px; /* Set a max width to prevent it from becoming too large */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+    .sign-up-container {
+        width: 95%; /* Further increase width to 95% on very small screens */
     }
 }
