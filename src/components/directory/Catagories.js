@@ -1,5 +1,6 @@
 import React from 'react'
 import DirectoryItem from '../directory-item/DirectoryItem'
+import './categories.styles.scss'
 const catagories = [
   {
     "id": 1,
@@ -36,7 +37,7 @@ const catagories = [
 const Catagories = () => {
   
   return (
-    <div className="catagories-container">
+    <div className="categories-container">
     {catagories.map((catagory)=> (
        <DirectoryItem key={catagory.id} catagory={catagory} />
   
