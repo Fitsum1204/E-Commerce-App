@@ -55,7 +55,7 @@ if(paymentResult.error) {
   
      <PaymentFormContainer onSubmit={paymentHandler}>
        <FormContainer>
-      <h2>Creadit Card Method</h2>
+      <h2>Credit Card Method</h2>
       <CardElement
           options={{
             style: {
