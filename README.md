@@ -1,7 +1,16 @@
-# Getting Started with Create React App
+# E-commerce App by Fitsum
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An e-commerce web application built with modern web technologies, providing a responsive, offline-capable shopping experience.
+## Features
+\. React: Core framework for a component-based architecture.
+\. Redux-Saga: For handling complex asynchronous state management.
+\. Styled Components: Custom styling with dynamic theming.
+\. Firebase: Authentication and database integration.
+\. Progressive Web App (PWA): Offline support for a native app experience.
+\. Jest: Basic tests for component reliability.
 
+## Demo
+https://e-commerce-app-fitsum.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
