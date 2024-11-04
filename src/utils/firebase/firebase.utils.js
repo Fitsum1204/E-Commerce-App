@@ -3,8 +3,7 @@
 import { initializeApp } from "firebase/app";
 import { 
     getAuth,
-    //eslint-disable-next-line
-    signInWithRedirect,
+   
     signInWithPopup,
     GoogleAuthProvider,
     createUserWithEmailAndPassword,

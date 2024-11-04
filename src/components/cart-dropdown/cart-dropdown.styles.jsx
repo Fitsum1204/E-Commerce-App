@@ -24,6 +24,7 @@ export const CartDropdownContainer = styled.div`
     height: 300px;
     right: 20px;
     padding: 15px;
+    top: 100px; /* Shift down */
   }
 
   @media screen and (max-width: 480px) {
@@ -31,6 +32,7 @@ export const CartDropdownContainer = styled.div`
     height: 280px;
     right: 10px;
     padding: 10px;
+    top: 150px; /* Shift further down */
   }
 `;
 
